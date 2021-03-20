@@ -61,7 +61,7 @@ export default {
         pagenum: 1,
         pagesize: 10
       },
-      // 存储商品列表的数据列表，默认为空
+      // 存储商品列表的数据对象，默认为空
       goodsList: [],
       // 存储商品列表的总条数
       total: 0
@@ -84,7 +84,7 @@ export default {
       // 请求成功就将返回的数据进行存储
       // 为存储商品列表的变量赋值
       this.goodsList = res.data.goods
-      // 为总数据条数赋值
+      // 为总条数数据赋值
       this.total = res.data.total
     },
     // 当分页功能中每一页显示的条数发生改变
