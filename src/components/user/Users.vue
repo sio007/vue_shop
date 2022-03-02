@@ -306,7 +306,7 @@ export default {
       // element表单中提供resetFields实例方法可以清空表单,使用方法:实例对象.resetFields()
       this.$refs.editFormRef.resetFields()
     },
-    // 当点击修改对话框中的确定按钮时，添加用户
+    // 当点击修改对话框中的确定按钮时，修改用户
     editUserInfo: function () {
       // element中提供validate实例方法可以验证表单内容,使用方法:实例对象.validate()
       // 点击确认的时候先调用validate方法验证表单内容是否有误

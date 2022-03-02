@@ -33,7 +33,7 @@
         </el-table-column>
         <el-table-column label="操作" width="125px">
           <template slot-scope="scope">
-            <el-button size="mini" type="primary" icon="el-icon-edit"></el-button>
+            <el-button size="mini" type="primary" icon="el-icon-edit" @click="goEditpage(scope.row.goods_id)"></el-button>
             <el-button size="mini" type="danger" icon="el-icon-delete" @click="removeById(scope.row.goods_id)"></el-button>
           </template>
         </el-table-column>
@@ -128,6 +128,9 @@ export default {
     // 点击添加商品按钮时触发
     goAddpage: function () {
       this.$router.push('/goods/add')
+    },
+    goEditpage: function (id) {
+      this.$router.push('/goods/edit/' + id)
     }
   }
 }
